@@ -1,0 +1,202 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+@media (min-width: 1200px) {
+  .container { max-width: 1140px; }
+}
+
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 25px;
+    background-color: #141118;
+    
+}
+
+.top-bar img{
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+}
+
+.top-bar h2{
+    color: white;
+    font-family: 'Inria Serif', serif;
+}
+
+.nav-links{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a{
+    text-decoration: none;
+}
+
+.nav-links #login{
+    color: white;
+}
+
+.nav-links #signup{
+    color: #E29FFF;
+}
+/*bckgrnd design*/
+.background-design{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    margin-top: 20vh;
+    background-color: #E29FFF;
+    z-index: 1;
+}
+
+/*main --welcome*/
+.welcome-tag{
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.welcome-tag h1{
+    font-family: 'Inria Serif', serif;
+}
+.welcome-tag p{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*login container*/
+.login-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    overflow: hidden;
+}
+.login-card h1{
+    margin-top: 0px;
+    margin-bottom: 5vh;
+    font-family: 'Inria Serif', serif;
+   
+}
+.login-card{
+    width: 100%;
+    max-width: 450px;
+    padding: 40px 30px;
+    margin-top: 8vh ;
+    border-radius: 25px;
+    text-align: center;
+    background-image:linear-gradient(to top, #E29FFF, white);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+form{
+    margin: 0;
+}
+.credentials p{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    margin-left: 3vw;
+}
+.input-wrapper{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.input-wrapper i{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: black;
+}
+.input-wrapper input{
+    width: 100%;
+    padding: 12px 12px 12px 50px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    border: 1px solid #dcdcdc;                                              
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: rgba(249, 200, 236, 0.566);
+}
+.forgot-password{
+    margin-top: 12px;
+    margin-right: 3vw;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    font-size: 14px;
+}
+.login-btn{
+    margin-top: 4vh;
+    width: 50%;
+    padding: 10px 10px 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #aea9a9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: #c37fe0;
+    font-size: 14px;
+    cursor: pointer;
+}
+.continue-p{
+    margin-top: 4vh;
+    font-size: 14px;
+}
+.socmed{
+    margin-top: 5vh;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+.socmed #google{
+    width: 30px;
+    height: 30px;
+}
+.socmed #fb{
+    width: 55px;
+    height: 35px;
+}
+.create-account{
+    font-size: 14px;
+    margin-top: 5vh;
+    margin-bottom: 0px;
+}
+.create-account a{
+    text-decoration: none;
+}
+
+/*footer*/
+.login-footer{
+    background-color: black;
+    margin-top: 20vh;
+    padding: 15px 25px;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cta-links{
+    display: flex;
+    gap: 25px;
+}
+.cta-links a{
+    color: white;
+    font-size: 0.9rem; 
+    text-decoration: none;
+    align-items: center;
+}
+.login-footer p{
+    color: white;
+    font-size: 0.9rem;
+}

@@ -6,9 +6,9 @@
     <title>LOG IN</title>
     <link rel="stylesheet" href="../style/login.css">
     <!--fonts-->
-    <link href="https://googleapis.com" rel="stylesheet">
-    <!--icon for email and password-->
-   <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body id="container">
@@ -41,18 +41,10 @@
 
                     <div class="credentials">
                         <p>Email</p>
-                        <div class="input-wrapper">
-                            <i class="fa-solid fa-user" ></i>
-                            <input type="email" placeholder="name@example.com">
-                        </div>
-                    </div>
-
-                    <div class="credentials">
+                        <input type="email" placeholder="name@example.com" id="email">
+                    
                         <p>Password</p>
-                        <div class="input-wrapper">
-                            <i class="fa-solid fa-lock" ></i>
-                            <input type="text">
-                        </div>
+                        <input type="password" id="password">
                     </div>
 
                     <a href="#" class="forgot-password">Forgot Password?</a>

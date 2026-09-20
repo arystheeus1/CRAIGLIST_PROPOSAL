@@ -1,4 +1,3 @@
-/* Reset & Base Setup */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +13,6 @@ body {
     min-height: 100vh;
 }
 
-/* Header Styling */
 .main-header {
     background-color: #0d0d11;
     color: #ffffff;
@@ -72,7 +70,6 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Search Bar Section */
 .search-bar-container {
     background-color: #e2a2ff;
     padding: 14px 28px;
@@ -133,13 +130,11 @@ body {
     color: #444;
 }
 
-/* Main Layout */
 .main-layout {
     display: flex;
     flex: 1;
 }
 
-/* Sidebar Styles */
 .sidebar {
     width: 220px;
     background-color: #ffffff;
@@ -167,12 +162,12 @@ body {
     font-weight: 600;
     color: #1a1a1a;
     margin-bottom: 12px;
-    cursor: pointer;
 }
 
-.category-tree > li a {
+.category-tree a {
     color: inherit;
     text-decoration: none;
+    display: inline-block;
 }
 
 .category-tree .arrow {
@@ -185,6 +180,13 @@ body {
     list-style: none;
     padding-left: 20px;
     margin-top: 8px;
+    display: none;
+}
+
+.category-tree li:hover > .sub-category,
+.category-tree li:focus-within > .sub-category,
+.category-tree li.active > .sub-category {
+    display: block;
 }
 
 .sub-category li {
@@ -194,11 +196,14 @@ body {
     margin-bottom: 6px;
 }
 
-.sub-category li:hover {
+.sub-category li a {
+    color: #444444;
+}
+
+.sub-category li a:hover {
     text-decoration: underline;
 }
 
-/* Listings Styles */
 .listings-container {
     flex: 1;
     padding: 28px 48px;
@@ -236,7 +241,6 @@ body {
     text-transform: uppercase;
 }
 
-/* Footer Styling */
 .main-footer {
     background-color: #121018;
     color: #ffffff;

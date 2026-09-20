@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>craigslist - Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-top">
+            <a href="index.html" class="logo-icon"><i class="fa-solid fa-peace"></i></a>
+            <a href="index.html" class="brand-title">craigslist</a>
+        </div>
+        <div class="header-sub">
+            <nav class="left-nav">
+                <a href="#">Philanthropies</a>
+                <a href="#">Charitable Funds</a>
+                <a href="#">Craigslist Hiring</a>
+            </nav>
+            <nav class="right-nav">
+                <a href="#">SIGN UP</a>
+                <a href="#">LOG IN</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="search-bar-container">
+        <div class="search-input-wrapper">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" placeholder="Search Services" class="search-input">
+        </div>
+        <div class="location-btn-wrapper">
+            <button class="location-btn">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Pick a Location</span>
+            </button>
+        </div>
+    </section>
+
+    <div class="main-layout">
+        <aside class="sidebar">
+            <h2 class="filter-title">Filter</h2>
+            <ul class="category-tree">
+                <li><span class="arrow">&gt;</span> <a href="housing-and-living.html">Housing &amp; Living</a></li>
+                <li><span class="arrow">&gt;</span> <a href="jobs-and-gigs.html">Jobs &amp; Gigs</a></li>
+                <li class="expanded">
+                    <span class="arrow">v</span> Services
+                    <ul class="sub-category">
+                        <li>Home Repairs &amp; Painting</li>
+                        <li>Lessons &amp; Tutoring</li>
+                        <li>Creative &amp; Technical</li>
+                        <li>Automotive Service</li>
+                    </ul>
+                </li>
+                <li><span class="arrow">&gt;</span> <a href="vehicles.html">Vehicles</a></li>
+                <li><span class="arrow">&gt;</span> <a href="marketplace.html">Marketplace</a></li>
+                <li><span class="arrow">&gt;</span> <a href="community.html">Community</a></li>
+            </ul>
+        </aside>
+
+        <main class="listings-container">
+            <div class="listing-item">
+                <div class="listing-info">
+                    <h3 class="listing-title">Interior &amp; Exterior House Painting</h3>
+                    <p class="listing-description">Professional residential painting. Free estimates and color consultation.</p>
+                </div>
+                <div class="listing-meta">FREE QUOTE</div>
+            </div>
+            <div class="listing-item">
+                <div class="listing-info">
+                    <h3 class="listing-title">Web &amp; Database Development Assistance</h3>
+                    <p class="listing-description">Custom web applications, SQL queries, and UI bug fixes.</p>
+                </div>
+                <div class="listing-meta">$45 / hr</div>
+            </div>
+            <div class="listing-item">
+                <div class="listing-info">
+                    <h3 class="listing-title">Acoustic &amp; Electric Guitar Lessons</h3>
+                    <p class="listing-description">Beginner to advanced instruction. Online or in-person sessions.</p>
+                </div>
+                <div class="listing-meta">$40 / lesson</div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-links">
+            <a href="#">PRIVACY</a>
+            <a href="#">TERMS AND CONDITIONS</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="copyright">&copy; 2026 craigslist</div>
+    </footer>
+</body>
+</html>

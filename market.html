@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>craigslist - Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-top">
+            <a href="index.html" class="logo-icon"><i class="fa-solid fa-peace"></i></a>
+            <a href="index.html" class="brand-title">craigslist</a>
+        </div>
+        <div class="header-sub">
+            <nav class="left-nav">
+                <a href="#">Philanthropies</a>
+                <a href="#">Charitable Funds</a>
+                <a href="#">Craigslist Hiring</a>
+            </nav>
+            <nav class="right-nav">
+                <a href="#">SIGN UP</a>
+                <a href="#">LOG IN</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="search-bar-container">
+        <div class="search-input-wrapper">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" placeholder="Search Marketplace" class="search-input">
+        </div>
+        <div class="location-btn-wrapper">
+            <button class="location-btn">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Pick a Location</span>
+            </button>
+        </div>
+    </section>
+
+    <div class="main-layout">
+        <aside class="sidebar">
+            <h2 class="filter-title">Filter</h2>
+            <ul class="category-tree">
+                <li><span class="arrow">&gt;</span> <a href="housing-and-living.html">Housing &amp; Living</a></li>
+                <li><span class="arrow">&gt;</span> <a href="jobs-and-gigs.html">Jobs &amp; Gigs</a></li>
+                <li><span class="arrow">&gt;</span> <a href="services.html">Services</a></li>
+                <li><span class="arrow">&gt;</span> <a href="vehicles.html">Vehicles</a></li>
+                <li class="expanded">
+                    <span class="arrow">v</span> Marketplace
+                    <ul class="sub-category">
+                        <li>Electronics</li>
+                        <li>Furniture &amp; Decor</li>
+                        <li>Clothing &amp; Accessories</li>
+                        <li>Collectibles</li>
+                    </ul>
+                </li>
+                <li><span class="arrow">&gt;</span> <a href="community.html">Community</a></li>
+            </ul>
+        </aside>
+
+        <main class="listings-container">
+            <div class="listing-item">
+                <div class="listing-info">
+                    <h3 class="listing-title">Mid-Century Modern Teak Dining Table</h3>
+                    <p class="listing-description">Solid wood, includes two extension leaves. Great condition.</p>
+                </div>
+                <div class="listing-meta">$450</div>
+            </div>
+            <div class="listing-item">
+                <div class="listing-info">
+                    <h3 class="listing-title">Mechanical Keyboard - Custom Switches</h3>
+                    <p class="listing-description">Hot-swappable PCB, aluminum frame, braided USB-C cable included.</p>
+                </div>
+                <div class="listing-meta">$110</div>
+            </div>
+            <div class="listing-item">
+                <div class="listing-info">
+                    <h3 class="listing-title">35mm Film Camera with 50mm Lens</h3>
+                    <p class="listing-description">Fully functional shutter speeds, clear glass, film tested.</p>
+                </div>
+                <div class="listing-meta">$185</div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-links">
+            <a href="#">PRIVACY</a>
+            <a href="#">TERMS AND CONDITIONS</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="copyright">&copy; 2026 craigslist</div>
+    </footer>
+</body>
+</html>

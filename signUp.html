@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Craigslist Sign Up</title>
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="../style/signup.css">
+    <link rel="stylesheet" href="../style/login.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+
+<body id="container">
+    <div>
+        <!--header-->
+        <header class="top-bar">
+            <img src="../images/icon.png" alt="Craigslist">
+            <h2 id="company-name">craigslist</h2>
+            <div class="nav-links">
+                <a href="#" id="login">LOG IN</a>
+                <a href="#" id="signup">SIGN UP</a>
+            </div>
+            
+        </header>
+
+        <!--welcome-->
+        <div class="welcome-tag">
+            <h1>Create an Account</h1>
+            <p>Register your personal account</p>
+        </div>
+
+        <!--background of login form-->
+        <div class="background-design"></div>
+
+        <!--login container-->
+        <main class="login-container">
+            <div class="login-card">
+                <form action="#" method="POST">
+                    <h1>SIGN UP</h1>
+
+                    <div class="credentials">
+                        <p>Email</p>
+                        <input type="email" placeholder="name@example.com" id="email">
+                    
+                        <p>Password</p>
+                        <input type="password" id="password">
+
+                        <p>Confirm Password</p>
+                        <input type="password" id="confirmPassword">
+                    </div>
+
+                    <button type="submit" class="login-btn">Sign Up</button>
+
+                    <p class="create-account">Already have an account?
+                        <a href="#">Log In</a>
+                    </p>
+                </form>
+            </div>
+        </main>
+
+        <footer class="login-footer">
+            <div class="footer-links">
+                <div class="cta-links">
+                    <a href="#">PRIVACY</a>
+                    <a href="#">TERMS AND CONDITION</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <p>&copy; 2026 craigslist</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

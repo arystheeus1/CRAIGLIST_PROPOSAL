@@ -40,25 +40,33 @@
     </section>
 
     <div class="main-layout">
-        <aside class="sidebar">
+        <div class="sidebar">
             <h2 class="filter-title">Filter</h2>
             <ul class="category-tree">
                 <li><span class="arrow">&gt;</span> <a href="housing-and-living.html">Housing &amp; Living</a></li>
-                <li class="expanded">
-                    <span class="arrow">v</span> Jobs &amp; Gigs
+                <li class="active" tabindex="0">
+                    <span class="arrow">v</span> <a href="jobs-and-gigs.html">Jobs &amp; Gigs</a>
                     <ul class="sub-category">
-                        <li>Software / Tech</li>
-                        <li>Creative &amp; Design</li>
-                        <li>Customer Support</li>
-                        <li>Event Gigs</li>
+                        <li><a href="#">Software / Tech</a></li>
+                        <li><a href="#">Creative &amp; Design</a></li>
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Event Gigs</a></li>
                     </ul>
                 </li>
-                <li><span class="arrow">&gt;</span> <a href="services.html">Services</a></li>
+                <li tabindex="0">
+                    <span class="arrow">&gt;</span> <a href="services.html">Services</a>
+                    <ul class="sub-category">
+                        <li><a href="#">Automotive</a></li>
+                        <li><a href="#">Beauty &amp; Wellness</a></li>
+                        <li><a href="#">Computer &amp; Tech</a></li>
+                        <li><a href="#">Creative &amp; Design</a></li>
+                    </ul>
+                </li>
                 <li><span class="arrow">&gt;</span> <a href="vehicles.html">Vehicles</a></li>
                 <li><span class="arrow">&gt;</span> <a href="marketplace.html">Marketplace</a></li>
                 <li><span class="arrow">&gt;</span> <a href="community.html">Community</a></li>
             </ul>
-        </aside>
+        </div>
 
         <main class="listings-container">
             <div class="listing-item">
@@ -74,20 +82,6 @@
                     <p class="listing-description">4-hour event session, basic editing and digital deliverable transfer required.</p>
                 </div>
                 <div class="listing-meta">$350 / gig</div>
-            </div>
-            <div class="listing-item">
-                <div class="listing-info">
-                    <h3 class="listing-title">Part-Time Barista</h3>
-                    <p class="listing-description">Morning shifts available. Experience with commercial espresso machines preferred.</p>
-                </div>
-                <div class="listing-meta">$18 / hr</div>
-            </div>
-            <div class="listing-item">
-                <div class="listing-info">
-                    <h3 class="listing-title">Graphic Designer - Brand Identity Refresh</h3>
-                    <p class="listing-description">Contract work creating brand guidelines, logo variants, and vector assets.</p>
-                </div>
-                <div class="listing-meta">$2,500 project</div>
             </div>
         </main>
     </div>

@@ -268,3 +268,23 @@ body {
     font-size: 12px;
     color: #cccccc;
 }
+
+.category-tree > li { cursor: pointer; }
+.category-tree .active > .sub-category { display: block; }
+.category-tree .sub-category { line-height: 1.5; }
+.category-tree .arrow { display: inline-block; min-width: 14px; }
+.logo-icon, .brand-title { cursor: pointer; }
+
+@media (max-width: 760px) {
+
+  .header-top, .header-sub { padding-left: 16px; padding-right: 16px; }
+  .left-nav a { margin-right: 12px; }
+  .header-sub { gap: 12px; flex-wrap: wrap; }
+  .search-bar-container { flex-wrap: wrap; padding: 14px 16px; }
+  .search-input-wrapper { width: min(100%, 320px); }
+  .main-layout { flex-direction: column; }
+  .sidebar { width: 100%; box-shadow: 0 4px 12px rgba(0,0,0,.08); }
+  .listings-container { padding: 24px 20px; }
+  .listing-item { gap: 16px; }
+  .main-footer { gap: 16px; flex-wrap: wrap; padding: 18px 20px; }
+}

@@ -16,11 +16,11 @@
     <div>
         <!--header-->
         <header class="top-bar">
-            <img src="../images/icon.png" alt="Craigslist">
+            <a href="HomePage.html"><img src="../images/icon.png" alt="Craigslist"></a>
             <h2 id="company-name">craigslist</h2>
             <div class="nav-links">
-                <a href="#" id="login">LOG IN</a>
-                <a href="#" id="signup">SIGN UP</a>
+                <a href="login.html" id="login">LOG IN</a>
+                <a href="signUp.html" id="signup">SIGN UP</a>
             </div>
             
         </header>
@@ -42,19 +42,21 @@
 
                     <div class="credentials">
                         <p>Email</p>
-                        <input type="email" placeholder="name@example.com" id="email">
+                        <input type="email" placeholder="name@example.com" id="email" required>
                     
                         <p>Password</p>
-                        <input type="password" id="password">
+                        <input type="password" id="password" required>
 
                         <p>Confirm Password</p>
-                        <input type="password" id="confirmPassword">
+                        <input type="password" id="confirmPassword" required>
                     </div>
 
-                    <button type="submit" class="login-btn">Sign Up</button>
-
+                    <a href="LogInHomePage.html">
+                        <button type="button" class="login-btn">Sign Up</button>
+                    </a>
+                    
                     <p class="create-account">Already have an account?
-                        <a href="#">Log In</a>
+                        <a href="login.html">Log In</a>
                     </p>
                 </form>
             </div>

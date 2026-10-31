@@ -7,11 +7,11 @@
         <link rel="stylesheet" href="../style/HomeStyle.css">
         <link rel="icon" href="../images/icon.png">
         <link rel="stylesheet" href="../style/loginhome.css">
+        <script src="../style/style.js"></script>
 
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
         <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 	</head>
   
@@ -32,11 +32,10 @@
             </div>
 
             <div class="navbar-right">
-                <input type="checkbox" id="profile-click-toggle" class="toggle-checkbox">
-                <label for="profile-click-toggle" class="profile-label">
+                <div class="profileTrigger" id="profile-Trigger">
                     <p>Profile</p>
-                </label>
-                <div class="dropdown">
+                </div>
+                <div class="dropdown" id="profileDropdown">
                     <a href="HomePage.html">Log Out</a>
                 </div>
             </div>
@@ -112,6 +111,11 @@
             </div>
         </footer>
 
+    </div>
+    <div>
+        <a href="feedback.html" class="sticky-tab">
+            <span>Feedback</span>
+        </a>
     </div>
 </body>
 </html>

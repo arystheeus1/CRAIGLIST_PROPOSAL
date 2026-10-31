@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Craigslist</title>
-        <link rel="stylesheet" href="HomeStyle.css">
-        <link rel="icon" href="icon.png" type="image/png">
-
-        <!--Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craigslist</title>
+    <link rel="stylesheet" href="../style/HomeStyle.css">
+    <link rel="icon" href="../images/icon.png" type="image/png">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
   
 <body id="PageTop">
     <div>
         <!--header-->
         <header class="top">
-            <img class="logo" src="icon.png" alt="Craigslist">
+            <img class="logo" src="../images/icon.png" alt="Craigslist">
             <h2>craigslist</h2>
         </header>
         
@@ -106,6 +104,24 @@
         </footer>
 
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () =>{
+        const elements = document.querySelectorAll(".cards");
+        const observer = new IntersectionObserver((entries, observerInstance) => {
+            entries.forEach(entry =>{
+                if(entry.isIntersecting){
+                    entry.target.classList.add("visible");
+                }else{
+                    entry.target.classList.remove("visible");
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        /*fade on scroll*/
+        elements.forEach(el => observer.observe(el));
+        });
+    </script>
 </body>
 </html>
-

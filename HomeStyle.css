@@ -429,3 +429,14 @@ body {
     flex-wrap: wrap;
   }
 }
+.brand-home { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand-home h2 { margin: 0; }
+.location-picker { display: inline-flex; align-items: center; gap: 8px; margin-left: 15px; padding: 0 12px; width: 200px; height: 40px; border: 0; border-radius: 5px; color: #141118; background: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1); font: 15px 'Roboto', sans-serif; text-align: left; cursor: pointer; transition: background-color .2s ease, transform .2s ease; }
+.location-picker:hover, .location-picker:focus-visible { background-color: rgb(249, 196, 255); transform: translateY(-1px); }
+.cards { transition: opacity .6s ease-in-out, transform .6s ease-in-out, box-shadow .15s ease; }
+@media (max-width: 1050px) {
+    .location-picker { width: 100%; max-width: 400px; margin: 8px 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .cards, .location-picker { transition-duration: .01ms; }
+}
